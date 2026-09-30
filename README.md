@@ -1,21 +1,10 @@
-# QR dinámico — Medigold
+# TIZERGOLD · QR autoadministrado
 
-Este repositorio contiene un enlace estable para un QR impreso.
+URL permanente impresa: https://istonehn.github.io/Proof/
 
-URL prevista del QR:
+Editar `config.js`: `window.TARGET_URL = "https://pagina-del-cliente.com";`.
+Dejar vacío para mostrar “Sitio en preparación”. Guardar en main y esperar el despliegue de Pages. Solo se aceptan destinos HTTP/HTTPS. No regenerar el QR.
 
-`https://istonehn.github.io/Proof/medigold/`
+GitHub Settings → Pages → Source: GitHub Actions.
 
-## Cambiar el destino del QR
-
-Edita `medigold/config.js` y cambia:
-
-`window.MEDIGOLD_TARGET = "";`
-
-por, por ejemplo:
-
-`window.MEDIGOLD_TARGET = "https://dominio-del-cliente.com";`
-
-El QR impreso no cambia.
-
-Mientras el destino esté vacío, la página muestra un mensaje neutro de "Sitio en preparación".
+La etiqueta terminada mide 45 × 10 mm. Verificar una prueba física antes de imprimir la tirada.

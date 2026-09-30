@@ -1,31 +1,19 @@
 <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <title>Medigold</title>
-  <style>
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f7f4f8;color:#2d1834;padding:24px}
-    main{width:min(520px,100%);background:#fff;border:1px solid #e8dce9;border-radius:20px;padding:32px;text-align:center;box-shadow:0 16px 50px rgba(53,24,60,.08)}
-    .mark{width:54px;height:54px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(135deg,#4b1859,#8c5a93);display:grid;place-items:center;color:#d7b56d;font-weight:800;font-size:24px}
-    h1{margin:0 0 8px;font-size:28px}
-    p{margin:0;color:#6e5a73;line-height:1.5}
-  </style>
-  <script src="./medigold/config.js"></script>
-  <script>
-    (function(){
-      const target = (window.MEDIGOLD_TARGET || "").trim();
-      if (target) location.replace(target);
-    })();
-  </script>
-</head>
-<body>
-  <main>
-    <div class="mark">M</div>
-    <h1>Medigold</h1>
-    <p>Información en preparación.</p>
-  </main>
-</body>
-</html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#361040">
+<title>TIZERGOLD — Sitio en preparación</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:32px;background:#faf9f6;color:#361040;font-family:Arial,sans-serif}
+main{text-align:center;width:min(480px,100%);padding:48px 16px}
+svg{width:64px;height:64px;color:#b59245;margin-bottom:20px}
+h1{font-family:Georgia,serif;font-size:clamp(30px,8vw,44px);font-weight:normal;letter-spacing:.03em;margin:0}h1 span{color:#ad893b}
+.rule{width:48px;height:1px;background:#b59245;margin:28px auto}p{font-size:15px;letter-spacing:.05em;color:#766b79;margin:0;line-height:1.6}
+</style>
+<script src="./config.js"></script>
+<script>
+(function(){const raw=typeof window.TARGET_URL==="string"?window.TARGET_URL.trim():"";if(!raw)return;try{const target=new URL(raw);if(!["https:","http:"].includes(target.protocol))return;if(target.origin===location.origin&&target.pathname.replace(/\/$/,"")===location.pathname.replace(/\/$/,""))return;location.replace(target.href);}catch(_){} })();
+</script></head><body><main>
+<svg viewBox="0 0 80 80" fill="none" aria-hidden="true"><path d="M17 64C10 39 23 18 58 17L70 8C71 42 56 65 28 64M19 65C31 44 49 35 66 16M22 53C23 38 36 27 54 26M29 61C44 59 56 46 60 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h1>TIZER<span>GOLD</span></h1><div class="rule"></div><p>Sitio en preparación</p>
+</main></body></html>
